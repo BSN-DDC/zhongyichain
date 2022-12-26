@@ -1,4 +1,6 @@
-[中移链]在移动云上推出区块链服务，依托中国移动千万级政企客户网络和多方协作生态圈，打造端到端一站式行业解决方案。“中移链”CMChain平台涉及行业涵盖政务、金融、农商、交通、工业、能源等，其中还有像“基于区块链的双碳管理平台”、“区块链供应链金融”等应用潜力广阔的特色方案。
+#### English Version | [中文版本](README_CN.md)
+
+[ChinaMobile Blockchain] is a highly stable and high-performance Open Permissioned Blockchain architecture launched by China Mobile Information Technology Center, which is deployed within the BSN portal and can be accessed and used by customers through a remote call link port, providing a full set of native user-contract-method permission control system to meet customers' permission control needs in multiple businesses, and is different from traditional federation chains, which pay according to the chain resources consumed by the business in real time. It is widely used in government and enterprise scenarios such as healthcare, digital copyright, social assistance, transparent government affairs, file storage, community governance, material traceability, etc. It solves the problem of data openness and transparency in complex business scenarios with larger scale, more participants and stronger visibility.
 
 网关接入说明 https://bsnbase.com/static/tmpFile/bzsc/openper/7-3-6.html
 
