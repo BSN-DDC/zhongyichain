@@ -10,7 +10,7 @@
 Add this dependency to your project's POM.xml file:
 
 ```xml
-     <dependency>
+<dependency>
     <groupId>org.bouncycastle</groupId>
     <artifactId>bcprov-jdk15on</artifactId>
     <version>1.69</version>
@@ -236,9 +236,27 @@ public class DDC721ServiceTest {
         TableRows rows = ChainUtil.getInstance().getTableRows(table);
         System.out.println("Get all 721 DDCs hold by the owner yqyyyyyyyyyy in rows: " + JSON.toJSONString(rows, true));
     }
-
 }
 
-
+@Slf4j
+public class DDC721ServiceTest {
+    DDCCrossChainServiceImpl crosschain = new DDCCrossChainServiceImpl();
+    
+    // 发起跨链
+    @Test
+    public void crossChainTransfer() {
+        crosschain.crossTrans(
+                sender, // 发起跨链的签名者账户
+                1, // 1表示721
+                signer, // 目标链签名者账户
+                to, // 目标链接收者账户
+                ddcId,
+                data, // 附加数据
+                toChainId, // 目标链Id
+                toCCAddr, // 目标链跨链合约地址
+                vo.getFuncName() // 目标链合约方法名
+        );
+    }
+}
 ```
 
